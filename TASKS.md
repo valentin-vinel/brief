@@ -9,10 +9,10 @@
 
 ## 🔧 Setup
 
-- [ ] Installer les dépendances : `npm install @supabase/supabase-js @supabase/ssr @google/generative-ai youtube-transcript`
-- [ ] Installer shadcn/ui : `npx shadcn@latest init` puis ajouter les composants : `button input card badge skeleton toast dialog`
-- [ ] Créer le `.env.local` depuis `.env.example` et remplir les variables
-- [ ] Configurer les clients Supabase dans `src/lib/supabase.ts` (server + browser)
+- [X] Installer les dépendances : `npm install @supabase/supabase-js @supabase/ssr @google/generative-ai youtube-transcript`
+- [X] Installer shadcn/ui : `npx shadcn@latest init` puis ajouter les composants : `button input card badge skeleton toast dialog`
+- [X] Créer le `.env.local` depuis `.env.example` et remplir les variables
+- [X] Configurer les clients Supabase dans `src/lib/supabase.ts` (server + browser)
 
 ## 🔐 Auth
 
