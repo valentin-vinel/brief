@@ -76,10 +76,10 @@ export default async function HomePage() {
         {/* Fake result card */}
         <div className="border rounded-xl bg-white p-6 flex flex-col gap-6">
           {/* Video header */}
-          <div className="flex gap-4 items-start">
-            <div className="w-32 h-[72px] shrink-0 rounded-md bg-zinc-100 overflow-hidden">
+          <div className="flex flex-col gap-4 items-start lg:flex-row">
+            <div className="w-32 h-18 shrink-0 rounded-md bg-zinc-100 overflow-hidden">
               {/* Thumbnail placeholder */}
-              <div className="w-full h-full bg-gradient-to-br from-zinc-200 to-zinc-300 flex items-center justify-center">
+              <div className="w-full h-full bg-linear-to-br from-zinc-200 to-zinc-300 flex items-center justify-center">
                 <svg className="w-8 h-8 text-zinc-400" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z" />
                 </svg>
