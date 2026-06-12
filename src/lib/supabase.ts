@@ -1,5 +1,4 @@
-import { createBrowserClient, createServerClient } from "@supabase/ssr"
-import { cookies } from "next/headers"
+import { createBrowserClient } from "@supabase/ssr"
 
 function getSupabaseEnv() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -15,30 +14,4 @@ function getSupabaseEnv() {
 export function createSupabaseBrowserClient() {
   const { url, anonKey } = getSupabaseEnv()
   return createBrowserClient(url, anonKey)
-}
-
-export async function createSupabaseServerClient() {
-  const { url, anonKey } = getSupabaseEnv()
-  const cookieStore = await cookies()
-
-  return createServerClient(url, anonKey, {
-    cookies: {
-      getAll() {
-        return cookieStore.getAll()
-      },
-      setAll(cookiesToSet) {
-        // setAll throws when called from a Server Component render path —
-        // Next.js only allows cookie writes in Route Handlers / Server Actions.
-        // Middleware is expected to refresh the session on navigation, so it's
-        // safe to swallow here.
-        try {
-          for (const { name, value, options } of cookiesToSet) {
-            cookieStore.set(name, value, options)
-          }
-        } catch {
-          // no-op
-        }
-      },
-    },
-  })
 }
