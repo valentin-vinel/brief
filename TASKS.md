@@ -18,14 +18,14 @@
 
 - [X] Créer la page `/auth` avec formulaire login + signup email/password (Supabase Auth)
 - [X] Créer le hook `useAuth.ts` (session, user, logout)
-- [ ] Créer le middleware Next.js — protège les routes `(private)/*`, redirect `/auth` si pas de session
-- [ ] Tester : accès `/dashboard` sans session → redirect `/auth` ✓
+- [X] Créer le middleware Next.js — protège les routes `(private)/*`, redirect `/auth` si pas de session
+- [X] Tester : accès `/dashboard` sans session → redirect `/auth` ✓
 
 ## 🏠 Landing page `/`
 
-- [ ] Layout public avec header (logo + bouton login)
-- [ ] Page d'accueil qui présente l'app
-- [ ] Si session active → redirect automatique vers `/dashboard`
+- [X] Layout public avec header (logo + bouton login)
+- [X] Page d'accueil qui présente l'app
+- [X] Si session active → redirect automatique vers `/dashboard`
 
 ## 📁 Dossiers — API
 
