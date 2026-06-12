@@ -105,7 +105,7 @@ export default function AuthForm() {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col gap-1.5 mb-4">
                 <label htmlFor="password" className="text-sm font-medium">
                   Mot de passe
                 </label>
