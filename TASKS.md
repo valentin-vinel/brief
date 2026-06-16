@@ -29,11 +29,11 @@
 
 ## 📁 Dossiers — API
 
-- [ ] `GET /api/folders` — retourne les dossiers de l'user avec le nombre de résumés
-- [ ] `POST /api/folders` — crée un dossier (multipart : name + image optionnelle → upload Supabase Storage)
-- [ ] `PATCH /api/folders/[id]` — renomme ou change l'image d'un dossier
-- [ ] `DELETE /api/folders/[id]` — supprime le dossier, ses résumés et son image Storage
-- [ ] Tester chaque route avec un client REST (ex: Bruno, Insomnia)
+- [X] `GET /api/folders` — retourne les dossiers de l'user avec le nombre de résumés
+- [X] `POST /api/folders` — crée un dossier (multipart : name + image optionnelle → upload Supabase Storage)
+- [X] `PATCH /api/folders/[id]` — renomme ou change l'image d'un dossier
+- [X] `DELETE /api/folders/[id]` — supprime le dossier, ses résumés et son image Storage
+- [X] Tester chaque route via scripts/test-folders.ts
 
 ## 📁 Dossiers — UI
 
